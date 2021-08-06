@@ -1,0 +1,17 @@
+.card {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  background-color: #d4e9d4;
+  height: 20em;
+  border-radius: 1em;
+}
+.img {
+  height: inherit;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.card__info * {
+  margin: 0;
+}
