@@ -1,5 +1,6 @@
 import './style.css';
 import { createElement } from './utils/createElement';
+import { createCharacterCard } from './components/character/character';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -10,6 +11,10 @@ const mainElement = createElement('main', {
     }),
     createElement('input', {
       placeholder: 'Find your favorite bug',
+    }),
+    createElement('div', {
+      className: 'characterContainer',
+      childElements: [createCharacterCard()],
     }),
   ],
 });
