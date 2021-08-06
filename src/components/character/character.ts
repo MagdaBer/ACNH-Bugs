@@ -1,20 +1,21 @@
 import { createElement } from '../../utils/createElement';
+import styles from './character.module.css';
 
 export function createCharacterCard(): HTMLElement {
   return createElement('article', {
-    className: 'character-card',
+    className: styles.card,
     childElements: [
       createElement('img', {
-        className: 'character-card__image',
+        className: styles.img,
         src: 'https://acnhapi.com/v1/images/bugs/1',
       }),
       createElement('section', {
-        className: 'character-card__info',
+        className: styles.card__info,
         childElements: [
           createElement('h2', { innerText: 'Kohlweißling' }),
           createElement('h3', { innerText: 'common butterfly' }),
           createElement('div', {
-            className: 'availability',
+            className: styles.card__availability,
             childElements: [
               createElement('h4', { innerText: 'Availability' }),
               createElement('p', { innerText: 'month-northern: 9-6' }),
