@@ -16,7 +16,7 @@ export function createCharacterCard(): HTMLElement {
           createElement('div', {
             className: 'availability',
             childElements: [
-              createElement('h4', { innerText: 'availability' }),
+              createElement('h4', { innerText: 'Availability' }),
               createElement('p', { innerText: 'month-northern: 9-6' }),
               createElement('p', { innerText: 'month-southern: 3-12' }),
             ],
@@ -24,7 +24,7 @@ export function createCharacterCard(): HTMLElement {
           createElement('p', { innerText: 'price: 160' }),
           createElement('p', {
             innerText:
-              'catch-phrase: Icaught a common butterfly! They often flutter by',
+              'catch-phrase: I caught a common butterfly! They often flutter by',
           }),
         ],
       }),
