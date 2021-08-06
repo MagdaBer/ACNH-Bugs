@@ -22,6 +22,10 @@ export function createCharacterCard(): HTMLElement {
             ],
           }),
           createElement('p', { innerText: 'price: 160' }),
+          createElement('p', {
+            innerText:
+              'catch-phrase: Icaught a common butterfly! They often flutter by',
+          }),
         ],
       }),
     ],
