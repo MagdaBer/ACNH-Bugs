@@ -6,11 +6,9 @@ import { types } from '../../types';
 export function createCharacterCard({
   img,
   name,
-  nameUS,
   northern,
   southern,
   price,
-  phrase,
 }: Character): HTMLElement {
   return createElement('article', {
     className: styles.card,
@@ -23,7 +21,6 @@ export function createCharacterCard({
         className: styles.card__info,
         childElements: [
           createElement('h2', { innerText: name }),
-          createElement('h3', { innerText: nameUS }),
           createElement('div', {
             className: styles.card__availability,
             childElements: [
@@ -33,9 +30,6 @@ export function createCharacterCard({
             ],
           }),
           createElement('p', { innerText: `price: ${price}` }),
-          createElement('p', {
-            innerText: phrase,
-          }),
         ],
       }),
     ],
