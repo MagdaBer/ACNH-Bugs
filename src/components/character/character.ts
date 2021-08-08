@@ -1,7 +1,6 @@
 import { Character } from '../../types';
 import { createElement } from '../../utils/createElement';
 import styles from './character.module.css';
-import { types } from '../../types';
 
 export function createCharacterCard({
   img,
