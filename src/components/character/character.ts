@@ -25,8 +25,12 @@ export function createCharacterCard({
             className: styles.card__availability,
             childElements: [
               createElement('h4', { innerText: 'Availability' }),
-              createElement('p', { innerText: 'month-northern' + northern }),
-              createElement('p', { innerText: 'month-southern' + southern }),
+              createElement('p', {
+                innerText: 'month-northern:' + ' ' + northern,
+              }),
+              createElement('p', {
+                innerText: 'month-southern:' + ' ' + southern,
+              }),
             ],
           }),
           createElement('p', { innerText: `price: ${price}` }),
